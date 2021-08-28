@@ -13,6 +13,6 @@ public class GetPositionY : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StaticVariable.PositionY = transform.position.y;
+        //StaticVariable.PositionY = transform.position.y;
     }
 }

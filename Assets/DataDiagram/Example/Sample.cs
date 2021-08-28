@@ -69,10 +69,10 @@ public class Sample : MonoBehaviour {
     }
 
     private void ContinueInput(float f) {
-        maxima = StaticVariable.Maxima;
-        minima = StaticVariable.Minima;
-        deviation = StaticVariable.SD;
-        currPosition = StaticVariable.PositionY;
+        //maxima = StaticVariable.Maxima;
+        //minima = StaticVariable.Minima;
+        //deviation = StaticVariable.SD;
+        //currPosition = StaticVariable.PositionY;
 
         if (null == m_DataDiagram)
             return;

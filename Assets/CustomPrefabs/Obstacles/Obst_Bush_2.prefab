@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 323115812270543388}
   - component: {fileID: 2587055951683227086}
   - component: {fileID: 4932848303484143909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obst_Bush_2
   m_TagString: SoftObstacle
   m_Icon: {fileID: 0}

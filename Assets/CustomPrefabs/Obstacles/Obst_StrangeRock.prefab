@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 1444517298307462116}
   - component: {fileID: 6199164039767810207}
   - component: {fileID: 9182080464468192585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obst_StrangeRock
   m_TagString: HardObstacle
   m_Icon: {fileID: 0}
@@ -109,6 +109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantEx3
       objectReference: {fileID: 0}
+    - target: {fileID: 6463103279978565845, guid: 87b04a6b131597e4db952f9810390439,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6463103279978990837, guid: 87b04a6b131597e4db952f9810390439,
         type: 3}
       propertyPath: m_RootOrder
@@ -183,6 +188,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlantEx3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463103279978565845, guid: 87b04a6b131597e4db952f9810390439,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6463103279978990837, guid: 87b04a6b131597e4db952f9810390439,
         type: 3}
@@ -334,6 +344,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock8
       objectReference: {fileID: 0}
+    - target: {fileID: 2277020209693313120, guid: 2e56899687a42f54aa20a3b27f073806,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 64881667895642920, guid: 2e56899687a42f54aa20a3b27f073806, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2e56899687a42f54aa20a3b27f073806, type: 3}
@@ -360,6 +375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlantEx3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463103279978565845, guid: 87b04a6b131597e4db952f9810390439,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6463103279978990837, guid: 87b04a6b131597e4db952f9810390439,
         type: 3}
@@ -436,6 +456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 629542536758182806, guid: 7ca2fa2809968cf47852232e5d4a6e43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 629542536758681526, guid: 7ca2fa2809968cf47852232e5d4a6e43,
         type: 3}
       propertyPath: m_RootOrder
@@ -510,6 +535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ivy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336919594275911764, guid: b3cfafb3174116447b21e588ab379d0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5336919594276004980, guid: b3cfafb3174116447b21e588ab379d0b,
         type: 3}
@@ -600,6 +630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass2
+      objectReference: {fileID: 0}
+    - target: {fileID: 629542536758182806, guid: 7ca2fa2809968cf47852232e5d4a6e43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 629542536758681526, guid: 7ca2fa2809968cf47852232e5d4a6e43,
         type: 3}
@@ -745,6 +780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210548377923341892, guid: 3f999b6beafe9d249bf9c3a91ff26ff6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8210548377925275780, guid: 3f999b6beafe9d249bf9c3a91ff26ff6,
         type: 3}

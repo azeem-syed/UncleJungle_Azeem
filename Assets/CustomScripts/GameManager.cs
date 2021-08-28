@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityEngine.XR.ARFoundation
 {
@@ -33,7 +34,7 @@ namespace UnityEngine.XR.ARFoundation
 
         public GameObject playerObject = null;
 
-        public TextMesh gameText = null;
+        public Text UITextBananasCount;
 
         //[Range(1.0f, 15.0f)]
         //public 
@@ -57,36 +58,34 @@ namespace UnityEngine.XR.ARFoundation
         Rigidbody playerRigidBody;
         Animator playerAnimator;
 
-        int frameCount = 0;
-        int arrayCount = 0;
-        int trackIndex = 0;
+        //int frameCount = 0;
+        //int arrayCount = 0;
+        //int trackIndex = 0;
         int velocityHash;
 
         float trackDistance = trackLength;
-        float spawnDistance = 0;
+        //float spawnDistance = 0;
 
-        float facePositionY = 0;
-        float facePositionYPrev = 0;
-        float min = 0;
-        float max = 0;
-        float deviation = 0;
+        //float facePositionY = 0;
         float currVelocity = 0;
-        float average = 0;
+        //float facePositionYPrev = 0;
+        //float min = 0;
+        //float max = 0;
+        //float deviation = 0;
+
+        //float average = 0;
 
         int laneNumber = 0;
         float calculatedLane = 0.0f;
         Vector3 lookAtRotation = Vector3.zero;
 
-        List<float> facePositions;
+        //List<float> facePositions;
 
         float startTime = 0;
         float interval = 0;
         IEnumerator InstantiateObstacleCoroutine;
         IEnumerator InstantiateTrackCoroutine;
         IEnumerator InstantiateCoinsCoroutine;
-
-
-
 
         bool jumping = false;
         bool sprinting = false;
@@ -98,8 +97,8 @@ namespace UnityEngine.XR.ARFoundation
             instiatedObstacles = new List<GameObject>();
             instiatedTracks = new List<GameObject>();
             instantiatedBananas = new List<GameObject>();
-            facePositions = new List<float>();
-            facePositions.Add(facePositionY);
+            //facePositions = new List<float>();
+            //facePositions.Add(facePositionY);
             playerRigidBody = player.GetComponent<Rigidbody>();
             playerAnimator = playerObject.GetComponent<Animator>();
             velocityHash = Animator.StringToHash("Velocity");
@@ -109,6 +108,7 @@ namespace UnityEngine.XR.ARFoundation
         // Update is called once per frame
         void Update()
         {
+            #region Face Detection
             /* Face detection based run
              *
             facePositionY = StaticVariable.PositionY;
@@ -150,8 +150,9 @@ namespace UnityEngine.XR.ARFoundation
                 interval = startTime > 0 ? Time.time - startTime : 0;
                 startTime = Time.time;
             }*/
+            #endregion
             int coinsCount = StaticVariable.bananas;
-            gameText.text = String.Format("Coins: {0}", coinsCount.ToString());
+            UITextBananasCount.text = String.Format(coinsCount.ToString());
 
 #if UNITY_EDITOR
             currVelocity = editorVelocity; //////////////////////////////////////////// - For Unity Play Mode - //////////////////////////////////////////////////////
@@ -217,7 +218,7 @@ namespace UnityEngine.XR.ARFoundation
             player.transform.localPosition = Vector3.MoveTowards(player.transform.localPosition, leadVector, currVelocity * Time.deltaTime);
             player.transform.LookAt(leadVector);
 
-            facePositionYPrev = facePositionY;
+            //facePositionYPrev = facePositionY;
         }
         IEnumerator InstantiateObstacle(float spawnPosition)
         {

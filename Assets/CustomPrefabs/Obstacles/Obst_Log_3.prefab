@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2257473475574173271}
   - component: {fileID: 1951474177003448834}
   - component: {fileID: 8043710968172517877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Log_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6162216720895031793}
   - component: {fileID: 8861667623077891893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obst_Log_3
   m_TagString: HardObstacle
   m_Icon: {fileID: 0}

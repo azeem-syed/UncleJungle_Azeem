@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5858418340395041334}
   - component: {fileID: 2705783829801950146}
   - component: {fileID: 819941870167323782}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obst_Rock2
   m_TagString: HardObstacle
   m_Icon: {fileID: 0}

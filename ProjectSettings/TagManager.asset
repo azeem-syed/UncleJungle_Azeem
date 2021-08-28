@@ -10,11 +10,15 @@ TagManager:
   - PlayerTag
   - GorillaObject
   - Banana
+  - UI_Bananas
+  - UI_Canvas
+  - BackCamera
+  - UI_Camera
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GameView
   - Water
   - UI
   - 
